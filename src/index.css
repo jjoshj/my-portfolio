@@ -1,13 +1,281 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+.App{
+  padding:1%;
+}
+.titlebox{
+  background-image:
+  url("https://www.opencodez.com/wp-content/uploads/2019/10/Full-Stack-Developer.jpeg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100vh;
+
+  width: 100%;
+align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.marker {
+  color: #be3144;
 }
+.intro-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.select-me {
+  font-size: big;
+  background-color: gray;
+  color: white;
+}
+.welcome-section {
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: center;
+  color: white;
+  background-color: white;
+  color: black;
+  
+}
+.anim {
+  width: 0%;
+  height: 0.9rem;
+  margin-right: 0.125rem;
+  border-right: solid 2px white;
+  white-space: no-wrap;
+  overflow: hidden;
+  word-break: break-all;
+}
+@media (min-width: 600px) {
+  .welcome-section {
+    font-size: 1.5rem;
+  }
+  .anim {
+    height: 1.9rem;
+  }
+  @keyframes text-animation {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 24rem;
+    }
+  }
+}
+.anim-typewriter1 {
+  animation: text-animation 1.6s steps(28) 1.8s 1 normal forwards,
+    cursor-animation 1000ms steps(40) 5 forwards;
+}
+
+.anim-typewriter2 {
+  animation: text-animation2 0.8s steps(12) 5.5s 1 normal both,
+    text-animation3 1ms linear 7.6s forwards,
+    cursor-animation 1000ms steps(40) 5s 6 forwards,
+    text-animation4 1s steps(23) 8.5s 1 normal forwards;
+}
+
+.anim-oops {
+  animation: selection 1ms linear 7.2s forwards, delete 1ms linear 7.6s forwards;
+}
+
+/* .anim-scroll-cue {
+  animation: scroll-cue 6s ease 11s infinite forwards;
+} */
+
+@keyframes intro {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes text-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 18rem;
+  }
+}
+
+@keyframes text-animation2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes text-animation3 {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 17%;
+  }
+}
+
+@keyframes text-animation4 {
+  from {
+    width: 18%;
+  }
+  to {
+    width: 106%;
+  }
+}
+
+@keyframes cursor-animation {
+  from {
+    border-right-color: red;
+  }
+  to {
+    border-right-color: white;
+  }
+}
+
+@keyframes selection {
+  from {
+    background-color: lightgray;
+  }
+  to {
+    background-color: rgb(51, 153, 255);
+  }
+}
+
+@keyframes delete {
+  from {
+    font-size: 5rem;
+  }
+  to {
+    font-size: 0rem;
+  }
+}
+
+
+
+
+
+
+
+span {
+  position: fixed;
+  background: #2a3f5c;
+  left: 0;
+  top: 33.3%;
+  
+}
+nav {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+  flex-direction: column;
+  margin-top: 40rem;
+  height: 70%;
+  
+position: absolute;
+
+}
+li {
+  display: flex;
+  list-style-type: none;
+  height: 25%;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 0;
+  left: 0;
+  align-items: center;
+}
+.hamburger {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  height: 3rem;
+  width: 3rem;
+  z-index: 100;
+}
+
+.line {
+  width: 2rem;
+  height: 2rem;
+
+  border-bottom: 4px solid red;
+  position: fixed;
+  
+  margin-left: 4.5rem;
+}
+
+.line:nth-child(2) {
+  margin-top: 10px;
+}
+
+.line:nth-child(3) {
+  margin-top: 20px;
+}
+
+.topSlice {
+  transform: rotate(-55deg);
+  width: 200vw;
+  top: 0;
+  left: -110%;
+  height: 50%;
+  background-color: red;
+}
+.middleSlice {
+  transform: rotate(-55deg);
+  width: 300vw;
+  left: -100%;
+  top: 25%;
+  height: 25%;
+  
+  background-color: green;
+}
+
+.bottomSlice {
+  transform: rotate(-55deg);
+  top: 75%;
+  left: -10%;
+  width: 200vw;
+  height: 25%;
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
