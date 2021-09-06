@@ -139,8 +139,8 @@ function Navebar(){
           
           onClick={() => setIsOpen((state) => !state)}
         >
-        <Link to="/">name</Link>
-        </motion.li>
+        <Link to="/">name</Link></motion.li>
+        
         <motion.li
           initial={false}
           variants={listAnimations}
