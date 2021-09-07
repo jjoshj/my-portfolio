@@ -1,7 +1,10 @@
-.App {
-  text-align: center;
-}
 
+nav{
+  position:static;
+}
+Link{
+  color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +29,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.footer{
+  width: 100%;
+  height: 9vh;
+  background-color: #ffe473;
+  display: grid;
+  
+  padding: 2px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @keyframes App-logo-spin {

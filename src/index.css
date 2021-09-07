@@ -1,14 +1,5 @@
-body {
-  margin: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-}
-.App{
-  padding:1%;
-}
+
+
 .titlebox{
   background-image:
   url("https://www.opencodez.com/wp-content/uploads/2019/10/Full-Stack-Developer.jpeg");
@@ -30,6 +21,7 @@ align-items: center;
   color: #be3144;
 }
 .intro-text {
+  
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -172,8 +164,22 @@ align-items: center;
 
 
 
+.linknav{
+  color: white;
+  text-decoration: none;
+}
 
-
+.menu__item a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #be3144;
+  transition: width 0.5s ease-in-out;
+}
+.menu__item a:hover:after {
+  width: 100%;
+}
 
 span {
   position: fixed;
@@ -218,6 +224,7 @@ li {
   height: 3rem;
   width: 3rem;
   z-index: 100;
+  
 }
 
 .line {
@@ -225,7 +232,7 @@ li {
   height: 2rem;
 
   border-bottom: 4px solid red;
-  position: fixed;
+  position:absolute;
   
   margin-left: 4.5rem;
 }
@@ -244,7 +251,7 @@ li {
   top: 0;
   left: -110%;
   height: 50%;
-  background-color: red;
+  background-color: white;
 }
 .middleSlice {
   transform: rotate(-55deg);
@@ -253,7 +260,7 @@ li {
   top: 25%;
   height: 25%;
   
-  background-color: green;
+  background-color: #ffe473;
 }
 
 .bottomSlice {
@@ -262,8 +269,9 @@ li {
   left: -10%;
   width: 200vw;
   height: 25%;
-  background-color: yellow;
+  background-color: whitesmoke;
 }
+
 
 
 

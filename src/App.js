@@ -1,29 +1,32 @@
 
-import { motion } from "framer-motion";
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
-} from "react-router-dom";
+  Route} from "react-router-dom";
 
 
 
 import './App.css';
 import { Main } from './Main';
+import { Navebar } from "./Navebar";
+import { Timeline } from "./Time Line/Timeline";
+import { Skills } from "./Skills/Skills.js";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailIcon from '@material-ui/icons/Mail';
 
 function App() {
   return (
-    <div className="App">
+    <div >
         
         <Router>
         <Navebar/>
         
         <Switch>
-          <Route exact path="/"> <Main /></Route>
-          <Route exact path="/para1"> <Para/></Route>
-          <Route exact path="/para2"> <Para/></Route>
+          <Route exact path="/"> <Main /><Timeline/><Skills/><Para/>< Footer/></Route>
+          <Route exact path="/para1"> <Timeline/></Route>
+          <Route exact path="/para2"> <Skills/></Route>
          
         </Switch>
         
@@ -31,153 +34,17 @@ function App() {
     </div>
   );
 }
-
-function Navebar(){
-  const [isOpen, setIsOpen] = useState(false);
-
-  const listAnimations = {
-    opened: {
-      opacity: 1,
-      y: -0,
-      x: 0
-    },
-    closed: {
-      opacity: 0,
-      y: -10,
-      x: 0
-    }
-  };
-  const animations = {
-    opened: {
-      height: "100vw",
-      x: "0%",
-      rotate: -55,
-      transition: {
-        type: "tween",
-        ease: "circIn",
-        duration: 0.5
-      }
-    },
-    closed: {
-      x: "10%",
-      height: 0,
-      rotate: -55,
-      transition: {
-        type: "Spring",
-        duration: 0.5,
-        delay: 1
-      }
-    }
-  };
-
-  const duration = {
-    duration: 0.5,
-    delay: 0.5
-  };
-  const duration2 = {
-    duration: 0.5,
-    delay: 0.6
-  };
-
-  const duration3 = {
-    duration: 0.5,
-    delay: 0.7
-  };
-  const duration4 = {
-    duration: 0.5,
-    delay: 0.8
-  };
-  const menu = useRef();
-  const handleKeyDown = (event) => {
-    console.log("A key was pressed", event.keyCode);
-  };
-
-  useEffect(() => {
-    menu.current.addEventListener("click", handleKeyDown);
-  });
-  return (
-    <>
-   
-    <nav >
-   
-      <motion.div
-        ref={menu}
-        className="hamburger"
-        onClick={() => setIsOpen((state) => !state)}
-      >
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </motion.div>
-      <motion.span
-        initial={false}
-        variants={animations}
-        animate={isOpen ? "opened" : "closed"}
-        className="topSlice"
-      ></motion.span>
-      <motion.span
-        initial={false}
-        variants={animations}
-        animate={isOpen ? "opened" : "closed"}
-        className="middleSlice"
-      ></motion.span>
-      <motion.span
-        initial={false}
-        variants={animations}
-        animate={isOpen ? "opened" : "closed"}
-        className="bottomSlice"
-      ></motion.span>
-      
-      <ul
-      animate={isOpen ? "opened" : "closed"}
-      >
-        <motion.li
-          initial={false}
-          variants={listAnimations}
-          animate={isOpen ? "opened" : "closed"}
-          transition={duration}
-          
-          onClick={() => setIsOpen((state) => !state)}
-        >
-        <Link to="/">name</Link></motion.li>
-        
-        <motion.li
-          initial={false}
-          variants={listAnimations}
-          animate={isOpen ? "opened" : "closed"}
-          transition={duration2}
-          onClick={() => setIsOpen((state) => !state)}
-        >
-          <Link to="/para1"> para1</Link>
-        </motion.li>
-        <motion.li
-          initial={false}
-          variants={listAnimations}
-          animate={isOpen ? "opened" : "closed"}
-          transition={duration3}
-          onClick={() => setIsOpen((state) => !state)}
-        >
-          <Link to="/para2"> para2</Link>
-        </motion.li>
-        <motion.li
-          initial={false}
-          variants={listAnimations}
-          animate={isOpen ? "opened" : "closed"}
-          transition={duration4}
-        >
-          Item4
-        </motion.li>
-       
-      </ul>
+function Footer(){
+  return(
+    <div className="footer">
+      <a  href="https://github.com/jjoshj" target="_blank" rel="github"><GitHubIcon style={{width:"7vh", height:"7vh",color:"black"}}/></a>
+      <a href="https://www.linkedin.com/in/jerry-josh/" target="_blank" rel="github"> <LinkedInIcon style={{width:"7vh", height:"7vh",color:"#0a66c2"}}/></a>
+      <a href="mailto:jerryjosh607@gmail.com?subject=Hey!" target="_blank" rel="github"><MailIcon style={{width:"7vh", height:"7vh",color:"#be3144"}}/></a>
      
-     
-    </nav>
-    
-  
       
-    </>
-  );
-};
+    </div>
+  )
+}
 
 function Para(){
   return(
