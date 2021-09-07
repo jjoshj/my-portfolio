@@ -37,9 +37,9 @@ function App() {
 function Footer(){
   return(
     <div className="footer">
-      <a  href="https://github.com/jjoshj" target="_blank" rel="github"><GitHubIcon style={{width:"7vh", height:"7vh",color:"black"}}/></a>
-      <a href="https://www.linkedin.com/in/jerry-josh/" target="_blank" rel="github"> <LinkedInIcon style={{width:"7vh", height:"7vh",color:"#0a66c2"}}/></a>
-      <a href="mailto:jerryjosh607@gmail.com?subject=Hey!" target="_blank" rel="github"><MailIcon style={{width:"7vh", height:"7vh",color:"#be3144"}}/></a>
+      <a  href="https://github.com/jjoshj" target="_blank" rel="noreferrer"><GitHubIcon style={{width:"7vh", height:"7vh",color:"black"}}/></a>
+      <a href="https://www.linkedin.com/in/jerry-josh/" target="_blank" rel="noreferrer" > <LinkedInIcon style={{width:"7vh", height:"7vh",color:"#0a66c2"}}/></a>
+      <a href="mailto:jerryjosh607@gmail.com?subject=Hey!" target="_blank" rel="noreferrer"><MailIcon style={{width:"7vh", height:"7vh",color:"#be3144"}}/></a>
      
       
     </div>

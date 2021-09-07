@@ -8,10 +8,10 @@ export function Main() {
       >
         <section className="intro-text">
           <h1 class="anim anim-typewriter1 anim-glow">
-            Hello, I'm <a class="marker">Jerry Josh J</a>
+            Hello, I'm <b class="marker">Jerry Josh J</b>
           </h1>
           <h1 class="anim anim-typewriter2 anim-glow">
-            I'm a <a class="select-me anim-oops">Mathematician</a>
+            I'm a <b class="select-me anim-oops">Mathematician</b>
             front-end web developer
           </h1>
         </section>
