@@ -12,6 +12,7 @@ import { Main } from './Main';
 import { Navebar } from "./Navebar";
 import { Timeline } from "./Time Line/Timeline";
 import { Skills } from "./Skills/Skills.js";
+import { Project } from "./Skills/Project";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
@@ -24,7 +25,7 @@ function App() {
         <Navebar/>
         
         <Switch>
-          <Route exact path="/"> <Main /><Timeline/><Skills/><Para/>< Footer/></Route>
+          <Route exact path="/"> <Main /><Timeline/><Skills/><Para/><Project/>< Footer/></Route>
           <Route exact path="/para1"> <Timeline/></Route>
           <Route exact path="/para2"> <Skills/></Route>
          

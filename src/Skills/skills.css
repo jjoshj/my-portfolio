@@ -1,8 +1,9 @@
 .form {
-    
+  
     text-align: center;
     z-index: -1;
     position: relative;
+   
   }
   .skill-title {
     padding-top: 50px;

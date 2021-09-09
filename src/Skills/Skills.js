@@ -9,7 +9,7 @@ export  function Skills() {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-      <>
+      
     <div className="form">
       <div className="skill-title" data-aos="fade-up">
         <h2>Skills</h2>
@@ -82,6 +82,6 @@ export  function Skills() {
         </div>
       </div>
     </div>
-    </>
+    
   );
 }

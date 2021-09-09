@@ -79,24 +79,24 @@ export function Navebar() {
           <div className="line"></div>
           <div className="line"></div>
         </motion.div>
-        <motion.span
+        <motion.gan
           initial={false}
           variants={animations}
           animate={isOpen ? "opened" : "closed"}
           className="topSlice"
-        ></motion.span>
-        <motion.span
+        ></motion.gan>
+        <motion.gan
           initial={false}
           variants={animations}
           animate={isOpen ? "opened" : "closed"}
           className="middleSlice"
-        ></motion.span>
-        <motion.span
+        ></motion.gan>
+        <motion.gan
           initial={false}
           variants={animations}
           animate={isOpen ? "opened" : "closed"}
           className="bottomSlice"
-        ></motion.span>
+        ></motion.gan>
 
         <ul
           animate={isOpen ? "opened" : "closed"}
