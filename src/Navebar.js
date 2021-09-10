@@ -110,7 +110,7 @@ export function Navebar() {
 
             onClick={() => setIsOpen((state) => !state)}
           >
-            <Link to="/" className="linknav">name</Link></motion.li>
+            <Link to="/" className="linknav">Hello</Link></motion.li>
 
           <motion.li
             initial={false}
@@ -120,7 +120,7 @@ export function Navebar() {
             className="menu__item"
             onClick={() => setIsOpen((state) => !state)}
           >
-            <Link to="/para1" className="linknav"> para1</Link>
+            <Link to="/about" className="linknav">About & Time Line</Link>
           </motion.li>
           <motion.li
             initial={false}
@@ -130,7 +130,7 @@ export function Navebar() {
             className="menu__item"
             onClick={() => setIsOpen((state) => !state)}
           >
-            <Link to="/para2" className="linknav"> para2</Link>
+            <Link to="/skills" className="linknav">Skills</Link>
           </motion.li>
           <motion.li
             initial={false}
@@ -138,8 +138,9 @@ export function Navebar() {
             animate={isOpen ? "opened" : "closed"}
             transition={duration4}
             className="menu__item"
+            onClick={() => setIsOpen((state) => !state)}
           >
-            Item4
+            <Link to="/project" className="linknav">Projects & Say Hai</Link>
           </motion.li>
 
         </ul>

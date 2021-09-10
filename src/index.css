@@ -7,26 +7,25 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 height: 100vh;
-
   width: 100%;
 align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
+  
 }
 
 .marker {
   color: #be3144;
 }
 .intro-text {
-  
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  
 }
 .select-me {
   font-size: big;
@@ -42,11 +41,10 @@ align-items: center;
   color: white;
   background-color: white;
   color: black;
-  
 }
 .anim {
   width: 0%;
-  height: 0.9rem;
+  height: 1rem;
   margin-right: 0.125rem;
   border-right: solid 2px white;
   white-space: no-wrap;
@@ -55,12 +53,14 @@ align-items: center;
 }
 @media (min-width: 600px) {
   .welcome-section {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .anim {
-    height: 1.9rem;
+    height: 2.3rem;
   }
-  @keyframes text-animation {
+}
+  @keyframes  text-animation {
+ 
     from {
       width: 0%;
     }
@@ -68,7 +68,7 @@ align-items: center;
       width: 24rem;
     }
   }
-}
+
 .anim-typewriter1 {
   animation: text-animation 1.6s steps(28) 1.8s 1 normal forwards,
     cursor-animation 1000ms steps(40) 5 forwards;
@@ -103,7 +103,8 @@ align-items: center;
     width: 0%;
   }
   to {
-    width: 18rem;
+    width: 20rem;
+
   }
 }
 
@@ -165,7 +166,7 @@ align-items: center;
 
 
 .linknav{
-  color: white;
+  color: #9ba4c1;
   text-decoration: none;
 }
 

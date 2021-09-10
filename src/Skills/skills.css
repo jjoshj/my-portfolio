@@ -19,6 +19,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-around;
+    
     align-items: center;
   }
   .skill-image {
@@ -29,6 +30,14 @@
     margin-bottom: 20px;
     box-shadow: 3px 1px 4px 2px rgb(168, 160, 160);
   }
+  .project{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+    
+    text-align: center;
+    margin: 4rem;
+  }
   @media (min-width: 300px) {
     .skills {
       grid-template-columns: 1fr 1fr;
@@ -37,6 +46,12 @@
   @media (min-width: 600px) {
     .skills {
       grid-template-columns: 1fr 1fr 1fr;
+    }
+    .project{
+      padding: 2rem;
+      margin: 1px;
+      grid-template-columns: 1fr 1fr ;
+     
     }
   }
 
@@ -51,7 +66,12 @@
     margin-top: 50px;
     margin-bottom: 20px;
     box-shadow: 3px 1px 4px 2px rgb(168, 160, 160);
-        
+      }
+      .project{
+        padding: 2rem;
+        margin: 1px;
+        grid-template-columns: 1fr 1fr 1fr;
+       
       }
   }
   

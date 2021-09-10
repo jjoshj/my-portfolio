@@ -1,3 +1,4 @@
+
 export function Main() {
   return (
     <div
@@ -14,6 +15,7 @@ export function Main() {
             I'm a <b class="select-me anim-oops">Mathematician</b>
             front-end web developer
           </h1>
+          
         </section>
       </div>
 
