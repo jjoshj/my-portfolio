@@ -9,11 +9,11 @@ export  function Project() {
  
 
   return (
-    <>
-     <h1 style={{textAlign:"center"}}> Project</h1>
-    <div className="project" >
+    < div style={{textAlign:"center"}}>
+     <h1> Project</h1>
+    <div  className="project" >
      
-    <Card  style={{width:'18rem',height:"30rem"}} >
+    <Card  style={{width:'18rem',height:"30rem",textAlign:"center"}} >
      <img src="img/Capture.PNG" 
      alt="project"
      style={{width:'100%',height:"15rem"}}/>
@@ -49,6 +49,6 @@ export  function Project() {
     href="https://dictionary-josh.netlify.app/" target="_blank" rel="noreferrer"
      variant="contained"  ><WebIcon/>site</Button>
     </Card>
-    </div></>
+    </div></div>
   );
 }

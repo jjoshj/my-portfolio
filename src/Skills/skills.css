@@ -34,9 +34,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap:2rem;
-    
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 4rem;
+    place-items: center;
   }
   @media (min-width: 300px) {
     .skills {
@@ -48,8 +50,7 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
     .project{
-      padding: 2rem;
-      margin: 1px;
+     
       grid-template-columns: 1fr 1fr ;
      
     }
@@ -68,8 +69,7 @@
     box-shadow: 3px 1px 4px 2px rgb(168, 160, 160);
       }
       .project{
-        padding: 2rem;
-        margin: 1px;
+       
         grid-template-columns: 1fr 1fr 1fr;
        
       }

@@ -134,7 +134,7 @@ My short-term goal is to get a job in a reputed company.</p>
             
           </section>
          
-          <h2>Start editing to see some magic happen!</h2>
+          
         </div>
       );
 }
