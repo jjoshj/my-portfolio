@@ -4,6 +4,7 @@ import {  Image } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 export  function Skills() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -80,7 +81,9 @@ export  function Skills() {
           />
           <div>MongoDB</div>
         </div>
+        
       </div>
+      
     </div>
     
   );
