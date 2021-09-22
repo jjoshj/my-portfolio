@@ -13,7 +13,7 @@ export function Main() {
           </h1>
           <h1 class="anim anim-typewriter2 anim-glow">
             I'm a <b class="select-me anim-oops">Mathematician</b>
-            front-end web developer
+            Full-Stack  Developer
           </h1>
           
         </section>

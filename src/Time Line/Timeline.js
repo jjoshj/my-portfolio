@@ -12,16 +12,13 @@ export function Timeline(){
             I'm always looking for an opportunity to code and learn new things.
             I study everyday to learn something new with programming. 
             I like to code everything I imagine and I think it can make a social impact sometimes.</p>
-            <p>I was born and brought up in Cuddalore. 
-              I completed my schooling at Krishnasamy Memorial Matriculation Higher Secondary School, Cuddalore.
-               Then I went to Chennai for my higher studies. 
-               There I joined Loyola college for my bachelor's degree in mathematics. 
-               Then I rejoined Loyola college for my master's degree in Mathematics.
-                I completed my M.sc in the month of July this year.
-               Then I joined Guvi to became a  javascript full stack developer.
+            <p>I was born and brought up in Cuddalore and also completed my schooling there.  
+               I joined Loyola college in Chennai for my bachelor's degree in mathematics. 
+               I completed my M.sc at Loyola in the month of July this year.
+               Then I joined Guvi to become a javascript full stack developer.
                I love playing football and have represented my hostel team in many competitions. 
-               My strengths are being hard-working, easily adaptable to any kind of environment, and team worker.
-My short-term goal is to get a job in a reputed company.</p>
+               I am a smart hardworker and easily adaptable to any kind of environment, I see myself as a team player.
+I would love to work in a company where I can contribute the organisation as well as develop my skills.</p>
            
            
           <section id="career">
@@ -79,8 +76,8 @@ My short-term goal is to get a job in a reputed company.</p>
                 <div class="career_text">
                   <h2>Loyola College, Chennai</h2>
                   <p>
-                    Meine gesamte obligatorische Schulzeit habe ich in Bern
-                    absolviert und mit sehr guten Noten abgeschlossen.
+                  I did my Bachelor of Science in Mathematics at Loyola college, Chennai.
+                   About my college, It is ranked as third best college in India by NIRF2021( National Institutional Ranking Framework). 
                   </p>
                 </div>
               </div>
@@ -99,9 +96,9 @@ My short-term goal is to get a job in a reputed company.</p>
                 <div class="career_text">
                   <h2>Loyola College, Chennai</h2>
                   <p>
-                    Um mich best möglich auf die IMD Ausbildung vorzubereiten, habe
-                    ich während drei Monaten den gestalterischen Vorkurs an der
-                    SFGBB in Bern besucht.
+                 Doing a Bachelor degree in Mathematics takes only 2% of your hair 
+                 but doing a Masters in Mathematics takes 25% of your hair.
+                 
                   </p>
                 </div>
               </div>
@@ -128,8 +125,8 @@ My short-term goal is to get a job in a reputed company.</p>
               </div>
               
               <Button  
-     href="https://drive.google.com/file/d/1AKNqKHAwAZsyKmd7y7ySYg_FoNBkSQol/view?usp=sharing" target="_blank" rel="noreferrer"
-     style={{border:"3px solid #be3144"}} variant="contained">Resume</Button>
+     href="https://drive.google.com/file/d/1NVDgCN7jXZcmX4qFdKBGjq4adLIilHLc/view?usp=sharing" target="_blank" rel="noreferrer"
+     style={{border:"3px solid #be3144",background:"#ffe473"}}>Resume</Button>
             </div>
             
           </section>

@@ -34,7 +34,7 @@ export function Navebar() {
       rotate: -55,
       transition: {
         type: "Spring",
-        duration: 0.5,
+        duration: 0.3,
         delay: 1
       }
     }

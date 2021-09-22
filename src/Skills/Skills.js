@@ -11,10 +11,11 @@ export  function Skills() {
   }, []);
   return (
       
-    <div className="form">
+    <div className="skillset">
       <div className="skill-title" data-aos="fade-up">
+      <hr style={{width:"95%",border:"3px solid #be3144",backgroundColor:"#ffe473"}}/>
         <h2>Skills</h2>
-        <hr />
+       
       </div>
       <div className="skills">
         <div data-aos="fade-up">
@@ -76,10 +77,18 @@ export  function Skills() {
         <div data-aos="fade-up">
           <Image
             className="skill-image"
-            src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"
+            src="https://th.bing.com/th/id/OIP.lIIc_svaWdGdEJuEk7TBlgHaHa?pid=ImgDet&rs=1"
             rounded
           />
-          <div>MongoDB</div>
+          <div>My SQL</div>
+        </div>
+        <div data-aos="fade-up">
+          <Image
+            className="skill-image"
+            src="https://th.bing.com/th/id/OIP.p39AtedgD_cWI3jLaNfv_AHaEw?pid=ImgDet&rs=1"
+            rounded
+          />
+          <div>Material-UI</div>
         </div>
         
       </div>
